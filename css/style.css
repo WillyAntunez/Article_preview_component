@@ -3,11 +3,111 @@ body, html{
     height: 100%;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
 }
 
 body{
     background-color: hsl(210, 46%, 95%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
 
+
+/* CARD */
+.card{
+    width: 728px;
+    height: 280px;
+    display: grid;
+    grid-template-columns: 39% 1fr;
+    box-shadow: 4px 21px 33px -8px rgba(0,0,0,0.11);
+}
+
+.card-image{
+    height: 100%;
+    background-size: cover; 
+    background-image: url('/images/drawers.jpg');
+    border-radius: 10px 0 0 10px;
+}
+
+.card-body{
+    font-family: 'Manrope', sans-serif;
+    padding: 35px 40px;
+    background-color: #ffffff;
+    color: hsl(214, 17%, 51%);
+    border-radius: 0 10px 10px 0 ;
+}
+
+.card .card-body .card-title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 20px;
+    color: hsl(217, 19%, 35%);
+}
+
+.card .card-body .card-content {
+    margin: 15px 0 19px 0;
+
+}
+
+.card .card-body p {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-footer-meta{
+    display: flex;
+}
+
+.card-body .card-footer-meta .card-writer{
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+}
+
+.card-body .card-footer-meta .card-date{
+    color: hsl(212, 23%, 69%);
+}
+
+
+.card-footer-meta p{
+    margin: 0;
+}   
+
+.card-avatar{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.card-footer .card-share-button{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background-color: hsl(210, 46%, 95%);
+    position: relative;
+}
+
+.card-footer .card-share-button .card-share-icon{
+    height: 13px;
+    width: 13px;
+    margin: auto auto;
+    position: absolute;
+    left: 10px;
+    top: 8px;
+}
