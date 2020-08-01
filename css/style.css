@@ -87,7 +87,6 @@ body{
     color: hsl(212, 23%, 69%);
 }
 
-
 .card-footer-meta p{
     margin: 0;
 }   
@@ -114,4 +113,66 @@ body{
     position: absolute;
     left: 10px;
     top: 8px;
+    cursor: pointer;
+}
+
+.card-share-globe{
+    width: 250px;
+    height: 55px;
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 10px;
+    padding: 0 35px 0 35px ;
+    display: flex;
+    align-items: center;
+}
+
+.card-share-triangle{
+    width: 0px;
+    height: 0px;
+    border-top: 14px solid hsl(217, 19%, 35%);
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+}
+
+.card-share-active{
+    position: absolute;
+    bottom: 45px;
+    right: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.card-share-globe .card-share-text p{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
+    color: hsl(212, 23%, 69%);
+    margin-right: 22px;
+}
+
+.card-share-active-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}   
+
+.card-share-active-content .card-share-social-icon{
+    width: 20px;
+}
+
+.card-share-active-content a{
+  display: block;
+}
+
+.twitter-share-button{
+    margin-right: 12px;
+    margin-left: 17px;
+}
+
+.card-share-active-content:nth-last-child(){
+    margin-right: 0;
 }
