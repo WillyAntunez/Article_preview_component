@@ -45,11 +45,15 @@ body{
     border-radius: 0 10px 10px 0 ;
 }
 
-.card .card-body .card-title {
+.card .card-body a .card-title {
     margin: 0;
     font-weight: 700;
     font-size: 20px;
     color: hsl(217, 19%, 35%);
+}
+
+.card .card-body a{
+    text-decoration: none;
 }
 
 .card .card-body .card-content {
