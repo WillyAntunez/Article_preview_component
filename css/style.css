@@ -18,9 +18,6 @@ body{
     align-items: center;
 }
 
-
-
-
 /* CARD */
 .card{
     width: 728px;
@@ -35,6 +32,7 @@ body{
     background-size: cover; 
     background-image: url('/images/drawers.jpg');
     border-radius: 10px 0 0 10px;
+    filter: brightness(105%);
     transition: all .25s ease-in-out;
 }
 
@@ -101,6 +99,7 @@ body{
     height: 38px;
     border-radius: 50%;
     margin-right: 15px;
+    filter: brightness(105%);
 }
 
 .card-footer .card-share-button{
@@ -126,7 +125,6 @@ body{
 .card-footer .card-share-button.active .card-share-icon {
     fill: #fff;
 }
-
 
 .card-footer .card-share-button .card-share-icon{
     height: 13px;
