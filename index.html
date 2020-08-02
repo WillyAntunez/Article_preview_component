@@ -35,9 +35,11 @@
             <p class="card-date">28 jun 2020</p>
           </div>
         </div>
-        <div class="card-share-button">
-          <img src="/images/icon-share.svg" alt="share button" class="card-share-icon">
-          <div class="card-share-active hidden">
+        <div class="card-share-button" id="shareButton">
+          <svg class="card-share-icon" xmlns="http://www.w3.org/2000/svg">
+            <path id='card-share-path' d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/>
+          </svg>
+          <div class="card-share-active hidden" id="cardShareMenu">
             <div class="card-share-globe">
               <div class="card-share-active-content">
                 <div class="card-share-text"> 

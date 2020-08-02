@@ -104,16 +104,34 @@ body{
     border-radius: 50%;
     background-color: hsl(210, 46%, 95%);
     position: relative;
+    cursor: pointer;
+    transition: all .30s ease-in-out;
 }
+
+.card-footer .card-share-button:hover{
+    background-color: hsl(217, 19%, 35%);
+}
+.card-footer .card-share-button:hover .card-share-icon{
+    fill: #fff;
+}
+
+.card-footer .card-share-button.active {
+    background-color: hsl(217, 19%, 35%);
+}
+.card-footer .card-share-button.active .card-share-icon {
+    fill: #fff;
+}
+
 
 .card-footer .card-share-button .card-share-icon{
     height: 13px;
-    width: 13px;
+    width: 15px;
     margin: auto auto;
     position: absolute;
     left: 10px;
     top: 8px;
-    cursor: pointer;
+    user-select: none;
+    fill: hsl(217, 19%, 35%);
 }
 
 .card-share-globe{
@@ -124,6 +142,8 @@ body{
     padding: 0 35px 0 35px ;
     display: flex;
     align-items: center;
+    
+    
 }
 
 .card-share-triangle{
@@ -142,8 +162,11 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    opacity: 1;
+    cursor: default;
+    transition: all .20s ease-in-out;
+    user-select: none;
 }
-
 
 .card-share-globe .card-share-text p{
     font-size: 15px;
@@ -175,4 +198,9 @@ body{
 
 .card-share-active-content:nth-last-child(){
     margin-right: 0;
+}
+
+.hidden{
+    opacity: 0;
+    visibility: hidden;
 }
