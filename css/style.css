@@ -35,6 +35,11 @@ body{
     background-size: cover; 
     background-image: url('/images/drawers.jpg');
     border-radius: 10px 0 0 10px;
+    transition: all .25s ease-in-out;
+}
+
+.card-image:hover{
+    filter: brightness(110%);
 }
 
 .card-body{
