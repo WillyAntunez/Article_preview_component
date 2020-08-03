@@ -28,6 +28,18 @@ body{
     
 }
 
+@media screen and (max-width: 920px){
+
+    .card{
+        width: 328px;
+        height: 510px;
+        grid-template-columns: unset;
+        grid-template-rows: 203px 1fr;
+        margin: 20px 0;
+    }
+
+}
+
 .card-img-container{
     overflow: hidden;
     position: relative;
@@ -43,10 +55,15 @@ body{
     transition: all .30s ease-in-out;
 }
 
-
 .card-img-container .card-img:hover{
     filter: brightness(110%);
     transform: scale(1.05);
+}
+
+@media screen and (max-width:920px){
+    .card-img-container{
+        border-radius: 10px 10px 0 0;
+    }
 }
 
 .card-body{
@@ -57,6 +74,7 @@ body{
     border-radius: 0 10px 10px 0 ;
 }
 
+
 .card .card-body a .card-title {
     margin: 0;
     font-weight: 700;
@@ -64,12 +82,24 @@ body{
     color: hsl(217, 19%, 35%);
 }
 
+@media screen and (max-width:920px){
+    .card-body{
+        padding: 35px;
+        padding-bottom: 20px;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .card .card-body a .card-title{
+        font-size: 16px;
+    }
+}
+
 .card .card-body a{
     text-decoration: none;
 }
 
 .card .card-body .card-content {
-    margin: 15px 0 19px 0;
+    margin: 15px 0 20px 0;
 
 }
 
@@ -122,14 +152,14 @@ body{
 }
 
 .card-footer .card-share-button:hover{
-    background-color: hsl(217, 19%, 35%);
+    background-color: hsl(214, 17%, 51%);
 }
 .card-footer .card-share-button:hover .card-share-icon{
     fill: #fff;
 }
 
 .card-footer .card-share-button.active {
-    background-color: hsl(217, 19%, 35%);
+    background-color: hsl(214, 17%, 51%);
 }
 .card-footer .card-share-button.active .card-share-icon {
     fill: #fff;
