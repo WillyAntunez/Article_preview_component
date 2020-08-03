@@ -1,9 +1,9 @@
 body, html{
-    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 *, *::before, *::after{
@@ -12,30 +12,34 @@ body, html{
 
 body{
     background-color: hsl(210, 46%, 95%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    
 }
 
 /* CARD */
+
+.container{
+    margin: 20px auto;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .card{
     width: 728px;
     height: 280px;
     display: grid;
     grid-template-columns: 39% 1fr;
     box-shadow: 4px 21px 33px -8px rgba(0,0,0,0.11);
-    
 }
 
 @media screen and (max-width: 920px){
 
     .card{
         width: 328px;
-        height: 510px;
+        height: 495px;
         grid-template-columns: unset;
         grid-template-rows: 203px 1fr;
-        margin: 20px 0;
     }
 
 }
@@ -72,6 +76,7 @@ body{
     background-color: #ffffff;
     color: hsl(214, 17%, 51%);
     border-radius: 0 10px 10px 0 ;
+    position: relative;
 }
 
 
@@ -85,8 +90,9 @@ body{
 @media screen and (max-width:920px){
     .card-body{
         padding: 35px;
-        padding-bottom: 20px;
+        padding-bottom: 0px;
         border-radius: 0 0 10px 10px;
+        overflow: hidden;
     }
 
     .card .card-body a .card-title{
@@ -198,9 +204,9 @@ body{
 
 .card-share-active{
     position: absolute;
-    bottom: 45px;
-    right: 0px;
-    left: 0px;
+    top: 138px;
+    left: 332px;
+    right: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -208,6 +214,28 @@ body{
     cursor: default;
     transition: all .20s ease-in-out;
     user-select: none;
+}
+
+@media screen and (max-width:920px){
+
+    .card-share-button.active{
+        z-index: 2;
+    }
+
+    .card-share-active{
+        left: 0;
+        top: 225px;
+    }
+
+    .card-share-globe{
+        width: 328px;
+        height: 70px;
+        border-radius: unset;
+    }
+
+    .card-share-triangle{
+        display: none;
+    }
 }
 
 .card-share-globe .card-share-text p{
