@@ -3,7 +3,7 @@ const cardShareMenu = document.getElementById('cardShareMenu');
 
 
 window.addEventListener('click', (e) => {
-    if((e.target != shareButton && e.target.parentElement != shareButton && e.target.parentElement.parentElement != shareButton) || e.target === null){
+    if(e.target === null  || (e.target != shareButton && e.target.parentElement != shareButton && e.target.parentElement.parentElement != shareButton) ){
         cardShareMenu.classList.add('hidden');
         shareButton.classList.remove('active');
     }else{
