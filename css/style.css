@@ -55,7 +55,7 @@ body{
     height: 100%;
     width: 100%;
     background-size: cover;
-    background-image: url('/images/drawers.jpg');
+    background-image: url('../images/drawers.jpg');
     filter: brightness(105%);
     transition: all .30s ease-in-out;
 }
